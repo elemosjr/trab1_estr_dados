@@ -6,9 +6,7 @@
 Primeiro trabalho da matéria estrutura de dados do curso de
 Estatística-UEM.
 
-# Primeira Metade
-
-## 1.6
+## Exercício 1 (1.6)
 
 Escreva um programa para contar dinheiro que pergunte, dentro de um
 monte de dinheiro, qual a quantidade de notas de:
@@ -25,7 +23,7 @@ Em seguida programa imprime qual o valor total em dinheiro.
 Exemplo: 2 notas de 1 real e 5 notas de 100 reais (entrada) dão um total
 de 502 reais (saída).
 
-## 1.7 Exercício
+## Exercício 2 (1.7)
 
 Escreva um programa que faça o inverso da questão anterior, ou seja,
 solicite ao usuário um valor (total) em dinheiro, e informe quantas
@@ -39,7 +37,7 @@ de 1 real.
 Bonus: minimize a quantidade de notas. No exemplo anterior poderia-se
 usar 1 nota de 2 reais ao invés de 2 notas de 1 real.
 
-## 1.8 Exercício
+## Exercício 3 (1.8)
 
 Uma agencia de espionagem encomendou um programa especial para fazer a
 codificação de mensagens. O programa inicialmente lê a mensagem e
@@ -59,7 +57,7 @@ mensagem codificada: ‘sEaté u amm neaseg.m’;
 Se o número de caracteres for ímpar, o programa acrescenta um caractere
 ‘\#’ no final antes de realizar a troca dos pares.
 
-## 2.7
+## Exercício 4 (2.7)
 
   - Faça um programa que receba o valor de uma dívida e mostre uma
     tabela com os seguintes dados:
@@ -86,7 +84,7 @@ Exemplo de saída do programa:
 |   R$ 1.100,00   |       100       |           3            |    R$ 366,00     |
 |   R$ 1.150,00   |       150       |           6            |    R$ 191,67     |
 
-## 2.9
+## Exercício 5 (2.9)
 
 Faça um programa para imprimir:
 
@@ -95,17 +93,17 @@ Faça um programa para imprimir:
 Para um n informado pelo usuário. Use uma função que receba um valor n
 inteiro e imprima até a n-ésima linha.
 
-## 2.11
+## Exercício 6 (2.11)
 
 Reverso do número. Faça uma função que retorne o reverso de um número
 inteiro informado. Por exemplo: 127 -\> 721.
 
-## 2.12
+## Exercício 7 (2.12)
 
 Faça uma função que informe a quantidade de dígitos de um determinado
 número inteiro informado.
 
-## 3.3
+## Exercício 8 (3.3)
 
 Faça uma função recursiva para retornar a soma dos digitos de um dado
 número:
@@ -116,9 +114,7 @@ sum_digits(345) = 12 sum_digits(45) = 9
 
 Caso queira, faça a versão iterativa primeiro.
 
-# Segunda Metade
-
-## Lista duplamente ligada
+## Exercício 9 (Lista duplamente ligada)
 
 Implementar operações de lista duplamente ligadas:
 
