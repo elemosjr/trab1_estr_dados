@@ -1,8 +1,10 @@
 #!/bin/Rscript
 
 ## Exercicio 1.8 ed
-main <- function(valor = 0)
+main <- function()
 {
+  cat("Qual o valor? ")
+  valor <- as.numeric(readLines("stdin", n = 1))
   resto <- valor
   quant <- c()
   nota <- c(1, 2, 5, 10, 50, 100)
@@ -24,4 +26,4 @@ main <- function(valor = 0)
   return(quant)
 }
 
-main(as.integer(commandArgs(trailingOnly = 1)[1]))
+main()
