@@ -6,12 +6,17 @@ main <- function()
   cat("Entre com o número: ")
   n <- readLines("stdin", n = 1)
 
+  rev_number(n)
+}
+
+rev_number <- function(n)
+{  
   string <- strsplit(as.character(n),"")[[1]]
-  
+
   string <- string[length(string):1]
   
   result <- paste(as.character(n), "->", paste(string, collapse = ""))
-  
+
   return(result)
 }
 

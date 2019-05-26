@@ -22,25 +22,33 @@ main <- function(notas = NULL)
     }
   }
   
+  notas[is.na(notas)] <- 0
+  
+  valor_notas(notas, val_nota)
+}
+
+valor_notas <- function(notas, val_nota)
+{
+  val_nota <- c(1,2,5,10,50,100)
   valor <- 0
   
-  for(i in 1:6)
+  for(i in 1:length(val_nota))
   {
     valor <- valor+(notas[i]*val_nota[i])
   }
-
+  
   text_nota <- ""
   
-  for(i in 1:6)
+  for(i in 1:length(val_nota))
   {
     if(notas[i] == 0)
     {} else if(notas[i] == 1)
     {
       text_nota <- paste0(text_nota,
-                         ", ",
-                         notas[i], 
-                         " nota de ", 
-                         val_nota[i])
+                          ", ",
+                          notas[i], 
+                          " nota de ", 
+                          val_nota[i])
     } else
     {
       text_nota <- paste0(text_nota,
@@ -63,7 +71,7 @@ main <- function(notas = NULL)
   text_nota <- gsub("^,\ ", "", text_nota)
   
   result <- paste0(text_nota, " dão um total de R$ ", valor, " reais.")
-
+  
   return(result)
 }
 

@@ -5,7 +5,12 @@ main <- function()
 {
   cat("Entre com o número: ")
   n <- as.numeric(readLines("stdin", n = 1))
-  
+
+  n_digits(n)
+}
+
+n_digits <- function(n)
+{
   count <- 0
   while(n >= 1)
   {
