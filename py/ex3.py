@@ -23,7 +23,7 @@ def codificar(string):
   text = ""
     
   for i in lista_n:
-    text = text+str(lista[i])+str(lista[i-1])
+    text += str(lista[i])+str(lista[i-1])
   
   print(text)
   

@@ -10,7 +10,7 @@ def main():
 def n_digits(n):
   count = 0
   while(n >= 1):
-    count = count+1
+    count += 1
     n = n/10
 
   result = "O número dado tem "+str(count)+" digitos."

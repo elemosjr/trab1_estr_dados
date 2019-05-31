@@ -4,7 +4,7 @@
 def main():
   n = str(input("Entre com o número: "))
 
-  print(sum_digits(n))
+  print("A soma dos digitos do número entrado é "+str(sum_digits(n)))
 
 
 def sum_digits(n):
@@ -13,7 +13,7 @@ def sum_digits(n):
   res_n = lista[0]
 
   if new_n != '':
-    res_n = res_n + sum_digits(new_n)
+    res_n += sum_digits(new_n)
   else:
     return(res_n)
 

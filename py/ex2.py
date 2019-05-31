@@ -20,7 +20,7 @@ def notas_valor(valor):
     if resto == 0:
       break
   
-  quant = quant+list(map(int, list("0"*(6-len(quant)))))
+  quant += list(map(int, list("0"*(6-len(quant)))))
 
   quant.reverse()
 
@@ -34,16 +34,16 @@ def notas_valor(valor):
     if quant[i] == 0:
       pass
     elif quant[i] == 1:
-      text_nota = text_nota+", "+str(quant[i])+" nota de "+str(nota[i])
+      text_nota += ", "+str(quant[i])+" nota de "+str(nota[i])
     else:
-      text_nota = text_nota+", "+str(quant[i])+" notas de "+str(nota[i])
+      text_nota += ", "+str(quant[i])+" notas de "+str(nota[i])
 
     if quant[i] == 0:
       pass
     elif nota[i] == 1:
-      text_nota+" real"
+      text_nota += " real"
     else:
-      text_nota+" reais"
+      text_nota += " reais"
 
   result = "A menor combinação possível de notas para dar o valor R$"+str(valor)+" é "+re.sub("^,\ ", "", text_nota)
 

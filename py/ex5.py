@@ -10,10 +10,9 @@ def main():
 def seq_n(n):
   lista = []
 
-  for i in range(1, n):
-    lista = lista+list(range(1, i))
-
-  print(lista)
+  for i in range(1, n+2):
+    lista = [f' {x} '.format(x) for x in map(str, list(range(1,i)))]
+    print("".join(lista))
 
 
 if __name__ == "__main__":
